@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Life Style Guide</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #e6f2ff;
+        margin: 0;
+        padding: 0;
+        color: #003366;
+      }
+
+      header {
+        background: #0059b3;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+
+      nav a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: yellow;
+      }
+
+      section {
+        background: white;
+        margin: 15px;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      section h2 {
+        color: #0059b3;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      th,
+      td {
+        border: 1px solid #0059b3;
+        padding: 8px;
+        text-align: center;
+      }
+
+      th {
+        background: #0059b3;
+        color: white;
+      }
+
+      form input,
+      form select,
+      form textarea {
+        margin: 5px 0;
+        padding: 5px;
+        width: 100%;
+      }
+
+      input[type="submit"] {
+        background: #0059b3;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        width: auto;
+      }
+
+      input[type="submit"]:hover {
+        background: #003366;
+      }
+
+      footer {
+        background: #003366;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+      }
+
+      footer a {
+        color: yellow;
+      }
+
+      /* New CSS for aligning Gender & Interests */
+      .form-options {
+        display: flex;
+        gap: 20px;
+        margin: 5px 0 15px 0;
+      }
+      .form-options label {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Guide To a Healthy Lifestyle</h1>
+      <nav>
+        <a href="#intro">Intro</a>
+        <a href="#nutrition">Nutrition</a>
+        <a href="#exercise">Exercise</a>
+        <a href="#sleep">Sleep</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro">
+        <h2>Introduction</h2>
+        <p>
+          Living a <b>healthy lifestyle</b> means balancing <i>exercise</i>,
+          good food and enough rest. Always try to drink enough H<sub>2</sub>O,
+          sleep <mark>7-9 hours</mark>, and remember even simple activities can
+          boost stamina by 10<sup>2</sup>%!
+        </p>
+      </section>
+
+      <section id="nutrition">
+        <h2>Nutrition</h2>
+        <p>A balanced diet includes proteins, vitamins, and minerals.</p>
+        <ul>
+          <li>Fruits</li>
+          <li>Vegetables</li>
+          <li>Whole Grains</li>
+          <li>Dairy</li>
+        </ul>
+        <p>Click the image below to learn more recipes:</p>
+        <a href="https://www.allrecipes.com" target="_blank">
+          <img src="healthy_food.jpg" alt="Healthy Food" width="200" />
+        </a>
+        <p>Here’s a healthy food chart:</p>
+        <img
+          src="https://i.pinimg.com/736x/a6/7f/32/a67f325a46ae619cfa3a7e6e55b951dc.jpg"
+          alt="Healthy Food Chart"
+          width="300"
+        />
+      </section>
+
+      <section id="exercise">
+        <h2>Exercise</h2>
+        <p>
+          Exercise helps in improving <i>muscle strength</i> and
+          <b>mental health</b>.
+        </p>
+        <ol>
+          <li>Start with stretching</li>
+          <li>Do 20 minutes of cardio</li>
+          <li>End with cool down</li>
+        </ol>
+        <ul>
+          <li>
+            Cardio
+            <ul>
+              <li>Running</li>
+              <li>Cycling</li>
+            </ul>
+          </li>
+          <li>Strength Training</li>
+          <li>Flexibility</li>
+        </ul>
+        <audio controls>
+          <source src="health_tips.mp3.mp3" type="audio/mpeg" />
+        </audio>
+        <video controls width="320">
+          <source src="workout_demo.mp4.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section id="sleep">
+        <h2>Sleep & Relaxation</h2>
+        <p>
+          Sleep is essential for recovery. Adults should sleep
+          <mark>7–9 hours</mark> daily.
+        </p>
+        <table>
+          <caption>
+            <b>Weekly Health Plan</b>
+          </caption>
+          <tr>
+            <th>Day</th>
+            <th>Diet</th>
+            <th>Exercise</th>
+            <th>Sleep</th>
+          </tr>
+          <tr>
+            <td>Monday</td>
+            <td>Fruits & Salad</td>
+            <td>Yoga</td>
+            <td>8 hrs</td>
+          </tr>
+          <tr>
+            <td colspan="2">Weekend (Sat–Sun)</td>
+            <td>Hiking</td>
+            <td>9 hrs</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+          <label>Name: <input type="text" name="name" /></label><br /><br />
+          <label>Email: <input type="email" name="email" /></label><br /><br />
+
+          <p>Gender:</p>
+          <div class="form-options">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+          </div>
+
+          <p>Interests:</p>
+          <div class="form-options">
+            <label><input type="checkbox" name="interest" value="nutrition"> Nutrition</label>
+            <label><input type="checkbox" name="interest" value="exercise"> Exercise</label>
+            <label><input type="checkbox" name="interest" value="meditation"> Meditation</label>
+          </div>
+
+          Age Group:
+          <select name="age">
+            <option>18–25</option>
+            <option>26–40</option>
+            <option>40+</option></select
+          ><br /><br />
+
+          <textarea
+            name="message"
+            rows="4"
+            cols="30"
+            placeholder="Your goals..."
+          ></textarea
+          ><br /><br />
+
+          <input type="submit" value="Submit" />
+        </form>
+        <p>
+          For queries, email us at
+          <a href="mailto:contact@healthylife.com">contact@healthylife.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Healthy Lifestyle Guide</p>
+      <a href="#intro">Back to Top</a>
+    </footer>
+  </body>
+</html>
